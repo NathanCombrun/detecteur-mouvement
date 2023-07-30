@@ -43,6 +43,10 @@ app.post('/motion', (req, res) => {
     res.send(`Le serveur a bien reçu le message du mouvement`)
 });
 
+app.get('/online', (req, res) => {
+    res.send('Serveur en ligne !')
+})
+
 // start server
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
